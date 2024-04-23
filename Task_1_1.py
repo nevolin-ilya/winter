@@ -1,1 +1,8 @@
-print(Task_1_1)
+
+
+x = int(input())
+
+y = int(input())
+
+print(x + y)
+print(x*y)
