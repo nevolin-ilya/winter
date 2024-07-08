@@ -7,7 +7,9 @@ def stroka(str1, str2):
     for i, j in zip(lst1, lst2):
         if ord(i) != ord(j):
             count += 1
-            print(count)
+    for i, j in zip(lst1[-1], lst2[-1]):
+        if ord(i) == ord(j):
+            count += 1
     if count == 2:
         return False
     elif abs(len(lst1) - len(lst2)) > 1:
@@ -19,4 +21,4 @@ def stroka(str1, str2):
     else:
         return True
 
-print(stroka("abc", "acb"))
+print(stroka("abc", "xabc"))
